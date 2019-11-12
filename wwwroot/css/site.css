@@ -60,14 +60,10 @@ html {
   min-height: 100%;
 }
 
-header {
-    background-color: goldenrod;
-}
-
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
-    background-color: lemonchiffon;
+    background-color: cornsilk;
     font-family: 'Sunshiney', cursive;
 }
 .footer {
@@ -76,6 +72,15 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
-  background-color:goldenrod;
+  background-color: cornflowerblue;
+}
+nav{
+    background-color: cornflowerblue;
+
+}
+.welcome{
+   margin-left:25%;
+   margin-right:25%;
+   margin-top:10px;
 }
 
