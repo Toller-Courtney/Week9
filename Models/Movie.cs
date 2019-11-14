@@ -20,11 +20,12 @@ namespace MvcMovie.Models
 
         [Range(1,100)]
         [DataType(DataType.Currency)]
-        [Display(Name="Total Earnings")]
-        [Column(TypeName="decimal(18,2")]
+        [Column(TypeName="decimal(18,2)")]
        
         public decimal Price { get; set; }
         
         public string Rating { get; set; }
+        [Display(Name="Imdb ID#")]
+        public string ImdbID { get; set; }
     }
 }

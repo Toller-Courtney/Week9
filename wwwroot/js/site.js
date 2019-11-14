@@ -2,3 +2,14 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+$(document).ready(function () {
+    let ImdbID = $("#poster-container").data("imdb");
+
+    if (ImdbID) {
+        $.getJSON("http://www.omdbapi.com/?i=" + ImdbID + "&apikey=284d2544", function (data) {
+           // console.log(data);
+            $("#poster").attr("src", data.Poster);
+
+        });
+    }
+});

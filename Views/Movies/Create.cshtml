@@ -52,6 +52,11 @@
                 <span asp-validation-for="Rating" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="ImdbID" class="control-label"></label>
+                <input asp-for="ImdbID" class="form-control" />
+                <span asp-validation-for="ImdbID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Add This Film" class="btn btn-primary" />
             </div>
         </form>
@@ -60,6 +65,11 @@
 
 <div>
     <a asp-action="Index">Back to Films</a>
+</div>
+<div class="col-md-4">
+    <div id="poster-container" data-imdb="@Html.DisplayFor(model => model.ImdbID)">
+        <img id="poster" class="img-fluid poster" />
+    </div>
 </div>
 
 @section Scripts {

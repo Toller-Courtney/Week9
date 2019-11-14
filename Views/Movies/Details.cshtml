@@ -42,6 +42,11 @@
         </dd>
     </dl>
 </div>
+<div class="col-md-4">
+    <div id="poster-container" data-imdb="@Html.DisplayFor(model=>model.ImdbID)">
+        <img id="poster" class="img-fluid poster"/>
+    </div>
+</div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model.Id">Edit This Film</a> |
     <a asp-action="Index">Back to Films</a>
